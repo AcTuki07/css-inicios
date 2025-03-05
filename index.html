@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicios CSS</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<header>
+    <h1>INICIOS DE CSS</h1>
+
+    <p>
+        Es una herramienta que se usa para creaar paginas de internet con un diseño atractivo y agradable para el
+        usuario.
+        <br>
+        <br>
+        Funciona aplicando estilos a los elementos de la pagina, como colores, tamaños, fuentes, etc. Los estilos se
+        definen en un archivo aparte llamado hoja de estilos.
+    </p>
+
+    <h2>
+        Instrucciones basicas
+    </h2>
+    <ol>
+        <li>Seleccionar el elemento al que se le quiere aplicar el estilo, usando al selector de etiqueta (div, p, h1,),
+            de clase (.mi-clase), de ID (#mi-id), de atributo ([type="text"]), selector universal (*), pseudo-clases
+            (a:hover), pseudo-elementos (p:first-line) y combinadores (descendiente)</li>
+        <li>Definir el estilo que se le quiere aplicar</li>
+        <li>Asociar el estilo al elemento</li>
+    </ol>
+</header>
+
+<body>
+    <section>
+        <h2>Modelo de cajajas</h2>
+        <p>
+            Las cajas son los elementos fundamentales de una pagina web. Cada caja tiene un contenido, un borde y un
+            margen.
+            <br>
+            <br>
+            Hay diferentes modelos de cajas:
+        </p>
+        <ul>
+            <li>Modelo de caja margin: Area al rededor del border </li>
+            <li>Modelo de caja de border: Es como una frontera que rodea el padding y el contenido</li>
+            <li>Modelo de caja de padding: Rodea el contenido</li>
+            <li>Modelo de caja de contenido: Donde se muestra el texto o las imagenesz</li>
+        </ul>
+
+        <img src="./modelo-de-caja.gif" alt="imagen de modelo de caja" width="500px">
+
+    </section>
+
+    <section>
+        <h3>Ejemplo:</h3>
+
+        <div
+            style="background-color: aqua; height: 200px; width: 200px; padding: 12px; margin: 40px; border: 10px solid red;">
+            <span>1</span>
+        </div>
+        <p>
+            Si se le da un padding de 12px, un margin de 40px y un border de 10px solid red, el resultado seria el de la
+            imagen de arriba.
+        </p>
+    </section>
+
+    <section>
+        <h2>Asociar una hoja de estilos a un documento</h2>
+        <p>Hay 3 maneraas de las cuales se le pude hacer uso a CSS</p>
+
+        <ol>
+            <li>Estilos externos: Se definen en un archivo aparte con extension .css (ejemplo: style.css) y se asocia al
+                documento con la
+                etiqueta link, es el mas adecuado, recuerde ligar el arcivho .css al html usando <strong>
+                    <"link rel="stylesheet" href="./style.css">
+                </strong> </li>
+            <br>
+
+            <li>Estilos internos: Se definen en la etiqueta style dentro del head del documento, todo lo que se escriba
+                dentro de esta etiquieta en el head, sera CSS</li>
+            <br>
+
+
+            <li>Estilos en linea: Se agreaga al elemento el atributo style. Por ejemplo, en el cuadrado de arriba
+                <strong>
+                    < "div
+                    style=" background-color: aqua; height: 200px; width: 200px; padding: 12px; margin: 40px; border:
+                        10px solid red;" div>
+                </strong>
+
+            </li>
+            <br>
+        </ol>
+
+    </section>
+
+    <section>
+        <h2>Selectores</h2>
+        <p>Los selectores son las reglas que se usan para aplicar estilos a los elementos de la pagina.</p>
+
+        <h3>Selector de ID</h3>
+        <P>Selecciona un elemento de un ID <strong> (Ejemplo: "< h2 id="subtitulo rojo">)" </strong></P>
+
+        <P>Ejemplo de como se usa
+            <br>
+            <br>
+            <strong>
+                <"style> <br>
+                    #subtitulo-rojo { <br>
+                    color: red;<br>
+                    } <br>
+                style> <br>
+            </strong>
+            <br><br>
+            Para poder usar el selector de ID, se debe de poner un # antes del nombre del ID
+        </P>
+        <h3>Selector Clases</h3>
+        <p>Selecciona todos los elementos de una clase <strong> (Ejemplo: "< h2 class="subtitulo-rojo">)" </strong></p>
+
+        <p>Ejemplo de como se usan
+            <br><br>
+            <strong>
+                <"style> <br>
+                    .subtitulo-rojo { <br>
+                    color: red;<br>
+                    } <br>
+                style> <br>
+            </strong>
+            <br><br>
+            Para poder usar el selector de clase, se debe de poner un . antes del nombre de la clase    
+        </p>
+
+    </section>
+
+
+
+</body>
+
+</html>
+
+<!-- <ul>
+    <li>Selector de etiqueta: Selecciona todos los elementos de una etiqueta</li>
+    <li>Selector de clase: Selecciona todos los elementos de una clase</li>
+    <li>Selector de ID: 
+    <li>Selector de atributo: Selecciona un elemento de un atributo</li>
+    <li>Selector universal: Selecciona todos los elementos de la pagina</li>
+    <li>Selector de pseudo-clases: Selecciona un elemento en un estado especifico</li>
+    <li>Selector de pseudo-elementos: Selecciona una parte de un elemento</li>
+    <li>Selector de combinadores: Selecciona un elemento en relacion a otro</li> -->
