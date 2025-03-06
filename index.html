@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicios CSS</title>
     <link rel="stylesheet" href="./style.css">
+
+
 </head>
 
 <header>
@@ -21,7 +23,7 @@
     </p>
 
     <h2>
-        Instrucciones basicas
+        Instrucciones basicass
     </h2>
     <ol>
         <li>Seleccionar el elemento al que se le quiere aplicar el estilo, usando al selector de etiqueta (div, p, h1,),
@@ -111,7 +113,7 @@
                     #subtitulo-rojo { <br>
                     color: red;<br>
                     } <br>
-                style> <br>
+                    style> <br>
             </strong>
             <br><br>
             Para poder usar el selector de ID, se debe de poner un # antes del nombre del ID
@@ -126,13 +128,99 @@
                     .subtitulo-rojo { <br>
                     color: red;<br>
                     } <br>
-                style> <br>
+                    style> <br>
             </strong>
             <br><br>
-            Para poder usar el selector de clase, se debe de poner un . antes del nombre de la clase    
+            Para poder usar el selector de clase, se debe de poner un . antes del nombre de la clase
         </p>
 
     </section>
+
+    <section>
+        <h2>
+            Medidas
+        </h2>
+        <p>Hay diferentes tipos de medidas que se pueden usar en CSS</p>
+
+        <p>
+            Unidades de longitud absolutas: Se definen en relacion a una medida fija
+        </p>
+        <ol>
+            <li>
+                cm: Centimetros
+            </li>
+            <li>
+                mm: Milimetros
+            </li>
+            <li>
+                in: Pulgadas
+            </li>
+            <li>
+                px: Pixels
+            </li>
+            <li>
+                pt: Puntos
+            </li>
+            <li>
+                pc: Picas
+            </li>
+        </ol>
+        <p>
+            Unidades de longitud relativas: Se definen en relacion a un elemento
+        </p>
+        <ol>
+            <li>
+                em: Tamaño de la fuente del elemento
+            </li>
+            <li>
+                ex: Altura de la x de la fuente del elemento
+            </li>
+            <li>
+                rem: Tamaño de la fuente del elemento raiz
+            </li>
+            <li>
+                vw: 1% del ancho de la ventana
+            </li>
+            <li>
+                vh: 1% de la altura de la ventana
+            </li>
+            <li>
+                %: Porcentaje del tamaño del elemento padre
+            </li>
+        </ol>
+
+    </section>
+
+    <section>
+        <h2>Elemeto de bloque < div>
+        </h2>
+        <p>Es un contenedor de bloques, se usa para dividir la pagina en secciones</p>
+        <p>Se puede usar para:</p>
+        <ul>
+            <li>Dividir la pagina en secciones</li>
+            <li>Crear columnas</li>
+            <li>Crear un layout</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Posicionamiento</h2>
+        <p> "position" es como una regla que permite posicionar los div. Hay diferentes maneras de posicionar los
+            elementos en una pagina web</p>
+        <ol>
+            <li>Posicionamiento static: Los elementos se colocan en el orden en el que aparecen en el codigo HTML, estas
+                propiedades no se ven afectados por las propiedades left, right, top y buttom </li>
+            <li>Posicionamiento relative: Los elementos se colocan en relacion a su posicion original</li>
+            <li>Posicionamiento absolut: Los elementos se colocan en relacion a su contenedor mas cercano, por defecto
+                tomara el body como valor relativo, pero si el contenedor padre es relativo, tomara el contenedor padre
+                como referencia. </li>
+            <li>Posicionamiento fixed: Los elementos se colocan en relacion a la ventana del navegador, es decir, aunque
+                usted haga scroll, el elemento seguira en la pantalla; puede ser util para navigation bar (Nav Bar)</li>
+
+        </ol>
+        <a href="./position.html">Ejemplos position</a>
+    </section>
+
 
 
 
